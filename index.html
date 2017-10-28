@@ -8,22 +8,22 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div id="imgbkgrd">
-		<header>
+	<div id="imgbkgrd"> <!-- contiene gif de lyft junto a un fondo en gradiente, desde el header hasta el primer div de section -->
+		<header> <!-- con posición fija, aún no cambia su fondo a blanco y logo a rosado :c javascript voy por ti (?) -->
 			<div>
 				<img class="header-logo" src="assets/images/logo-white.png" alt="">
 			</div>
-			<div class="links">
+			<div class="header-links"> 
 				<ul>
-					<a href="#">Drive</a>
-					<a href="#">Explore</a>
-					<a href="#">Help</a>
-					<a href="#">Log In</a>
+					<a class="links" href="#">Drive</a>
+					<a class="links" href="#">Explore</a>
+					<a class="links" href="#">Help</a>
+					<a class="links login" href="#">Log In</a>
 				</ul>
 			</div>
 		</header>
 		<section>
-			<div class="first">
+			<div class="first"> <!-- primer div, mide la altura del formulario alineado a la derecha que contiene -->
 				<div class="form">
 					<div class="text">
 						<h1>TURN MILES <br> INTO MONEY</h1>
@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<div class="second">
-				<div class="blurb"> 
+				<div class="blurb"> <!-- "propaganda" contiene texto e imagen de celular alineados --> 
 					<div>
 						<h3>A RIDE IN MINUTES</h3>
 						<p>Request a ride and you’ll be on your way in minutes. Request. Ride. Repeat</p>
@@ -50,20 +50,81 @@
 					</div>
 				</div>
 			</div>
-			<div class="third">
+	</div>
+			<div class="third"> <!-- contiene videos y texto  -->
 				<div class="watch-1">
 					<a href="#">WATCH</a>
 					<h3>AMPLIFY YOUR RIDE</h3>
 					<p>Lyft's new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</p>
-				</div>
+				</div> <!-- Copy & Pasted from YouTube -->
 				<div class="video"><iframe width="854" height="480" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" gesture="media" allowfullscreen></iframe></div>
 			</div>
-
-
+			<div class="fourth"> <!-- Copy & Pasted from YouTube -->
+				<div class="video"><iframe width="854" height="480" src="https://www.youtube.com/embed/V7j8Aqxmbs8" frameborder="0" gesture="media" allowfullscreen></iframe></div>
+				<div class="watch-2">
+					<a href="#">WATCH</a>
+					<h3>JUNE</h3>
+					<p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride - and sharing her life, too.</p>
+				</div>	
 			</div>
-
-
+			<div class="fifth">
+				<div class="watch-3">
+					<a href="#">WATCH</a>
+					<h3>A GOOD THING GOING</h3>
+					<p>Launching on TV and online, "Ride on the Bright Side" shows how Lyft continues to prioritize happy drivers, shorts ETAs, and safety.</p> 
+				</div> <!-- Copy & Pasted from YouTube -->
+				<div class="video"><iframe width="854" height="480" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" gesture="media" allowfullscreen></iframe></div>
+			</div>
 		</section>
-	</div>
+	<footer> <!-- footer lo divido en dos  -->
+		<div class="footer-above"> <!-- el primero contiene los las listas de links e imágenes -->
+			<div class="log-in"> <!-- segundo login, cambio de nombre porque casi me queda la mansaca -->
+				<ul class="lists">
+					<h3>LOG IN</h3>
+					<li><a class="links" href="#">Help</a></li>
+					<li><a class="links" href="#">Cities</a></li>
+					<li><a class="links" href="#">Airports</a></li>
+					<li><a class="links" href="#">Fare Estimated</a></li>
+				</ul>
+			</div>
+			<div class="partner">
+				<ul class="lists">
+					<h3>PARTNER</h3>
+					<li><a class="links" href="#">Partnerships</a></li>
+					<li><a class="links" href="#">Enterprise</a></li>
+					<li><a class="links" href="#">Ambassadors</a></li>
+					<li><a class="links" href="#">Developers</a></li>
+				</ul>
+			</div>
+			<div class="learn">
+				<ul class="lists">
+					<h3>LEARN</h3>
+					<li><a class="links" href="#">Safety</a></li>
+					<li><a class="links" href="#">Blog</a></li>
+					<li><a class="links" href="#">Press</a></li>
+					<li><a class="links" href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="logos">
+				<ul class="lists">
+					<li><img src="assets/images/apple-store.svg" alt=""></li>
+					<li><img src="assets/images/google-play.png" alt=""></li>
+					<li><img src="assets/images/microsoft.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-below"> <!-- el segundo contiene íconos y copyright  -->
+			<ul class="webicons"> <!-- circulos contienen los íconos de las redes sociales -->
+				<li><a class="circle" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a class="circle" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a class="circle" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</ul>
+			<hr class="secondline"> <!-- segundo hr, cambio de nombre porque casi me queda otra mansaca -->
+			<p class="last">© 2017 Lyft, Inc.
+			<a class="links" href="#">Terms</a>
+			<a class="links" href="">Privacy</a> </p>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>

@@ -18,27 +18,11 @@ body {
 	width: 100%; 
 }
 
-.container {
-	width: 1150px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 14px;
-	padding-right: 14px;
-}
-
-.container:before, .container:after {
-	content: " ";
-	display: table;
-}
 
 *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
-
-.container:after {
-	clear: both;
 }
 
 /* - */
@@ -48,7 +32,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position-y: -137px;
-	background-color: #28193F;
 	width: auto;
 }
 
@@ -64,31 +47,40 @@ header {
     margin-top: 40px;
 }
 
-.links {
+.header-links {
 	float: right;
-	margin-top: -60px;
+	margin-top: -80px;
 	width: 550px;
-	margin-right: 40px;
+	margin-right: 10px;
 }
 
-.links > ul {
+.header-links > ul {
 	display: inline-flex;
 	margin-right: 132px;
 	list-style: none;
 	line-height: 1.5;
 }
 
-.links > ul > a {
+/* características de todos los links de la página */
+.links {
 	text-decoration: none;
 	color: #FFF;
-	padding: 0 24px;
+	padding: 24px;
 	font-weight: 300;
 }
 
-.links > ul > a:hover {
-	color:#B70A95;
+.links:hover {
+	color:#FF00BF;
 }
 
+.login {
+	border: 1px solid #FFF;
+	border-radius: 8px;
+	padding: 10px 16px 0px;
+	margin: 12px 0px;
+}
+
+/* entre el header y el footer */
 section {
 	width: 100%;
 }
@@ -105,7 +97,7 @@ section {
 	width: 500px;
 	height: auto;
 	text-align: left;
-	margin-left: auto;
+	margin-left: auto; /* lo alinea a la derecha, WHY */
 }
 
 .text {
@@ -207,31 +199,113 @@ input[type=button], input[type=submit], input[type=reset] {
 	padding-right: 10%;
 }
 
-.third {
+/* características de div's tercero, cuarto y quinto */
+.third, .fourth, .fifth {
 	width: 100%;
 	height: 480px;
 	display: inline-flex;
 	background: #FFF;
 }
 
-.watch-1 {
+/* características de las cajas con texto */
+.watch-1, .watch-2, .watch-3 {
 	width: auto;
 	margin: 175px 50px;
 }
 
-.watch-1 > a {
+/* características de los links de las cajas de texto, ¿hay una forma de juntarlas? hmmm */
+.watch-1 > a, .watch-2 > a, .watch-3 > a {
 	text-decoration: none;
 	color: #000;
 	font-weight: 500;
 }
-
-.watch-1 > h3 {
+/* características de los títulos */
+.watch-1 > h3, .watch-2 > h3, .watch-3 > h3 {
 	font-size: 28px;
 	font-weight: 500;
 	line-height: 1.1;
 	margin: 20px 0px 20px;
 }
-
-.watch-1 > p {
+/* característica de los párrafos */
+.watch-1 >p, .watch-2 > p, .watch-3 > p {
 	font-weight: 400;
+}
+
+/* footer con texto alineado al centro */
+footer { 
+	width: 100%;
+	height: 600px;
+	background: #333447;
+	text-align: center;
+}
+/* primer div de footer contiene elementos alineados horizontalmente */
+.footer-above {
+	width: 100%;
+	height: auto;
+	text-align:left;
+	display: inline-flex;
+}
+
+.footer-above > div {
+	width: 22%;
+	height: 55%;
+	display: block;
+}
+
+.lists {
+	min-width: 110px;
+	list-style: none;
+	text-align: left;
+	margin: 30%;
+}
+
+.lists > h3 {
+	color: #FFF;
+}
+
+.lists > li > a {
+	padding: 0;
+	line-height: 40px;
+}
+
+.logos > ul > li > img {
+	min-width: 160px; /* appstore queda más pequeño */
+	max-width: 160px;
+	padding-bottom: 20px;
+}
+
+/* íconos alineados horizontalmente */
+.webicons {
+	list-style: none;
+	display: inline-flex;
+	padding: 0 15px;
+}
+
+.circle {
+	font-size: 16px;
+	line-height: 30px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	margin: 0 30px;
+}
+
+.circle > .fa {
+	color: #FFF;
+}
+
+.secondline {
+    border: none;
+    border-bottom: 1px solid #EEE;
+    width: 700px;
+    height: 2px;
+    margin: auto;
+}
+
+.last {
+	font-size: 14px;
+	color: #FFF;
 }
