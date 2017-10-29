@@ -18,14 +18,7 @@ body {
 	width: 100%; 
 }
 
-
-*:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-/* - */
+/* --- */
 
 #imgbkgrd{
 	background-image: url(../assets/images/hero.gif), linear-gradient(#76278F, #2B1E66); 
