@@ -240,7 +240,7 @@ footer {
 }
 
 .footer-above > div {
-	width: 22%;
+	width: 20%;
 	height: 55%;
 	display: block;
 }
@@ -249,7 +249,7 @@ footer {
 	min-width: 110px;
 	list-style: none;
 	text-align: left;
-	margin: 30%;
+	margin: 35% 20%;
 }
 
 .lists > h3 {
