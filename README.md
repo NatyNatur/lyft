@@ -20,4 +20,4 @@ El presente reto de código consistía en replicar el sitio de [Lyft](https://ww
 
 
 
-###### _it's kind of funny how i tried to name all in english and my tittle is in spanish_ :sweat_smile:
+###### _it's kind of funny how i tried to name all in english and my title is in spanish_ :sweat_smile:
